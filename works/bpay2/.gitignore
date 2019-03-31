@@ -1,0 +1,5 @@
+.idea
+*.css.map
+/assets/scss
+/assets/css/common.css.map
+/assets/img/**/*.css

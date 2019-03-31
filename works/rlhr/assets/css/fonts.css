@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Fugue-Regular';
+    src: url('../fonts/subset-Fugue-Regular.eot');
+    src: url('../fonts/subset-Fugue-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/subset-Fugue-Regular.woff2') format('woff2'),
+    url('../fonts/subset-Fugue-Regular.woff') format('woff'),
+    url('../fonts/subset-Fugue-Regular.ttf') format('truetype'),
+    url('../fonts/subset-Fugue-Regular.svg#Fugue-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Firasanslight';
+    src: url('../fonts/Firasanslight.eot');
+    src: url('../fonts/Firasanslight.eot') format('embedded-opentype'), url('../fonts/Firasanslight.woff2') format('woff2'), url('../fonts/Firasanslight.woff') format('woff'), url('../fonts/Firasanslight.ttf') format('truetype'), url('../fonts/Firasanslight.svg#Firasanslight') format('svg');
+}
+
+@font-face {
+    font-family: 'Firasansregular';
+    src: url('../fonts/Firasansregular.eot');
+    src: url('../fonts/Firasansregular.eot') format('embedded-opentype'), url('../fonts/Firasansregular.woff2') format('woff2'), url('../fonts/Firasansregular.woff') format('woff'), url('../fonts/Firasansregular.ttf') format('truetype'), url('../fonts/Firasansregular.svg#Firasansregular') format('svg');
+}
+
+@font-face {
+    font-family: 'PlayfairDisplayItalic';
+    src: url('../fonts/PlayfairDisplayItalic.eot');
+    src: url('../fonts/PlayfairDisplayItalic.eot') format('embedded-opentype'), url('../fonts/PlayfairDisplayItalic.woff2') format('woff2'), url('../fonts/PlayfairDisplayItalic.woff') format('woff'), url('../fonts/PlayfairDisplayItalic.ttf') format('truetype'), url('../fonts/PlayfairDisplayItalic.svg#PlayfairDisplayItalic') format('svg');
+}
+
+@font-face {
+    font-family: 'PlayfairDisplayRegular';
+    src: url('../fonts/PlayfairDisplayRegular.eot');
+    src: url('../fonts/PlayfairDisplayRegular.eot') format('embedded-opentype'), url('../fonts/PlayfairDisplayRegular.woff2') format('woff2'), url('../fonts/PlayfairDisplayRegular.woff') format('woff'), url('../fonts/PlayfairDisplayRegular.ttf') format('truetype'), url('../fonts/PlayfairDisplayRegular.svg#PlayfairDisplayRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'Firasansbold';
+    src: url('../fonts/Firasansbold.eot');
+    src: url('../fonts/Firasansbold.eot') format('embedded-opentype'), url('../fonts/Firasansbold.woff2') format('woff2'), url('../fonts/Firasansbold.woff') format('woff'), url('../fonts/Firasansbold.ttf') format('truetype'), url('../fonts/Firasansbold.svg#Firasansbold') format('svg');
+}
+

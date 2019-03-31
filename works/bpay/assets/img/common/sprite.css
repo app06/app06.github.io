@@ -1,0 +1,25 @@
+.arrow-left-hover, .arrow-left, .arrow-right-hover, .arrow-right, .circle, 
+.ico-btn-arrow-right-ok, .ico-btn-arrow-right, .ico-seller, .ico-buyer, .ico-check, 
+.ico-crypto, .ico-usd, .ico-sphere, .ico-mobile-menu-blue, .ico-mobile-menu, 
+.ico-mobile-menu-close, .ico-login, .ico-arrow-left-blue, .ico-arrow-right-blue
+{ display: inline-block; background: url('png.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+ 
+.arrow-left-hover { background-position: -4px -0px; width: 162px; height: 162px; }
+.arrow-left { background-position: -4px -166px; width: 162px; height: 162px; }
+.arrow-right-hover { background-position: -4px -332px; width: 162px; height: 162px; }
+.arrow-right { background-position: -4px -498px; width: 162px; height: 162px; }
+.circle { background-position: -4px -664px; width: 160px; height: 160px; }
+.ico-btn-arrow-right-ok { background-position: -4px -828px; width: 80px; height: 80px; }
+.ico-btn-arrow-right { background-position: -4px -912px; width: 80px; height: 80px; }
+.ico-seller { background-position: -88px -828px; width: 68px; height: 68px; }
+.ico-buyer { background-position: -88px -900px; width: 62px; height: 62px; }
+.ico-check { background-position: -88px -966px; width: 52px; height: 52px; }
+.ico-crypto { background-position: -4px -996px; width: 52px; height: 52px; }
+.ico-usd { background-position: -60px -1022px; width: 52px; height: 52px; }
+.ico-sphere { background-position: -116px -1022px; width: 32px; height: 32px; }
+.ico-mobile-menu-blue { background-position: -4px -1052px; width: 30px; height: 24px; }
+.ico-mobile-menu { background-position: -116px -1058px; width: 30px; height: 24px; }
+.ico-mobile-menu-close { background-position: -38px -1078px; width: 28px; height: 28px; }
+.ico-login { background-position: -70px -1078px; width: 26px; height: 30px; }
+.ico-arrow-left-blue { background-position: -144px -966px; width: 16px; height: 24px; }
+.ico-arrow-right-blue { background-position: -144px -994px; width: 16px; height: 24px; }

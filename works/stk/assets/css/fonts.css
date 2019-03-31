@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Geometria';
+    src: url('../fonts/Geometria/subset-Geometria-Light.eot');
+    src: url('../fonts/Geometria/subset-Geometria-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Geometria/subset-Geometria-Light.woff2') format('woff2'),
+        url('../fonts/Geometria/subset-Geometria-Light.woff') format('woff'),
+        url('../fonts/Geometria/subset-Geometria-Light.ttf') format('truetype'),
+        url('../fonts/Geometria/subset-Geometria-Light.svg#Geometria-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('../fonts/Geometria/subset-Geometria-Medium.eot');
+    src: url('../fonts/Geometria/subset-Geometria-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Geometria/subset-Geometria-Medium.woff2') format('woff2'),
+        url('../fonts/Geometria/subset-Geometria-Medium.woff') format('woff'),
+        url('../fonts/Geometria/subset-Geometria-Medium.ttf') format('truetype'),
+        url('../fonts/Geometria/subset-Geometria-Medium.svg#Geometria-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('../fonts/Geometria/subset-Geometria-Bold.eot');
+    src: url('../fonts/Geometria/subset-Geometria-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Geometria/subset-Geometria-Bold.woff2') format('woff2'),
+        url('../fonts/Geometria/subset-Geometria-Bold.woff') format('woff'),
+        url('../fonts/Geometria/subset-Geometria-Bold.ttf') format('truetype'),
+        url('../fonts/Geometria/subset-Geometria-Bold.svg#Geometria-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('../fonts/Geometria/subset-Geometria.eot');
+    src: url('../fonts/Geometria/subset-Geometria.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Geometria/subset-Geometria.woff2') format('woff2'),
+        url('../fonts/Geometria/subset-Geometria.woff') format('woff'),
+        url('../fonts/Geometria/subset-Geometria.ttf') format('truetype'),
+        url('../fonts/Geometria/subset-Geometria.svg#Geometria') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

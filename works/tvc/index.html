@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="msthemecompatible" content="no">
+		<meta name="cleartype" content="on">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="address=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<title>ТВЦ главная</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+		<link href="assets/css/reset.css" rel="stylesheet">
+		<link href="assets/css/datepicker.min.css" rel="stylesheet">
+		<link href="assets/css/common.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="content-outer">
+				<!-- .content-inner [ -->
+				<div class="content-inner">
+					<div class="header">
+						<div class="header__inner">
+							<div class="container">
+								<a href="#" class="logo__link">
+									<img src="assets/img/logo.png" alt="">
+									<span class="logo__text">ТВЦ</span>
+								</a>
+								<div class="header__social">
+									<ul class="social">
+										<li class="social__item"><a href="#" class="social__link social__link_fb"></a></li>
+										<li class="social__item"><a href="#" class="social__link social__link_vk"></a></li>
+										<li class="social__item"><a href="#" class="social__link social__link_tw"></a></li>
+										<li class="social__item"><a href="#" class="social__link social__link_yt"></a></li>
+										<li class="social__item"><a href="#" class="social__link social__link_ok"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="header__bottom">
+							<div class="container">
+								<a href="#" class="header__link-bottom"><img src="assets/img/nastroenie_1.svg" alt=""></a>
+							</div>
+						</div>
+					</div>
+					<div class="main-menu">
+						<div class="container">
+							<div class="main-menu__inner">
+								<span class="main-menu__mobile-btn"><span>open menu</span></span>
+								<ul class="main-menu__list">
+									<li class="main-menu__item">
+										<a href="#" class="main-menu__link">ГЛАВНАЯ</a>
+									</li>
+									<li class="main-menu__item">
+										<a href="#" class="main-menu__link">НОВОСТИ</a>
+									</li>
+									<li class="main-menu__item">
+										<a href="#" class="main-menu__link">ТЕЛЕПРОГРАММА</a>
+									</li>
+									<li class="main-menu__item">
+										<a href="#" class="main-menu__link">ПРЯМОЙ ЭФИР</a>
+									</li>
+									<li class="main-menu__item">
+										<a href="#" class="main-menu__link">ВИДЕОТЕКА</a>
+									</li>
+									<li class="main-menu__item">
+										<a href="#" class="main-menu__link">О КОМПАНИИ</a>
+									</li>
+									<li class="main-menu__item">
+										<a href="#" class="main-menu__link">16+</a>
+									</li>
+								</ul>
+								<div class="main-menu__search"><span class="main-menu__btn-search"></span>
+									<div class="main-menu__search-overlay"></div>
+									<div class="main-menu__search-block">
+										<div class="main-menu__search-tabs">
+											<ul class="main-menu__tabs-controls">
+												<li class="main-menu__tabs-controls-item active">
+													<span class="main-menu__tabs-link">поиск по дате</span>
+												</li>
+												<li class="main-menu__tabs-controls-item">
+													<span class="main-menu__tabs-link">поиск по новостям</span>
+												</li>
+												<li class="main-menu__tabs-controls-item">
+													<span class="main-menu__tabs-link">поиск по телеканалу</span>
+												</li>
+											</ul>
+											<ul class="main-menu__tabs-list">
+												<li class="main-menu__tabs-list-item active">
+													<form action="/news/index/" method="get">
+														<input autocomplete="off" type="text" name="date" class="main-menu__search-input main-menu__search-input_date" readonly><button type="submit" class="main-menu__search-submit"></button>
+													</form>
+												</li>
+												<li class="main-menu__tabs-list-item">
+													<form action="/search/index/" method="get">
+														<input type="hidden" name="type" value="news">
+														<input type="text" name="search_str" class="main-menu__search-input main-menu__search-input_news"><button type="submit" class="main-menu__search-submit"></button>
+													</form>
+												</li>
+												<li class="main-menu__tabs-list-item">
+													<form action="/search/index/" method="get">
+														<input type="hidden" name="type" value="channel">
+														<input type="text" name="search_str" class="main-menu__search-input main-menu__search-input_channel"><button type="submit" class="main-menu__search-submit"></button>
+													</form>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="fixed-menu">
+						<div class="fixed-menu__inner">
+							<div class="container">
+								<span class="main-menu__mobile-btn"><span>open menu</span></span>
+								<a href="#" class="fixed-menu__logo-link">
+									<img src="assets/img/logo.png" alt="">
+								</a>
+								<ul class="fixed-menu__list">
+									<li class="fixed-menu__item">
+										<a href="#" class="fixed-menu__link">ГЛАВНАЯ</a>
+									</li>
+									<li class="fixed-menu__item">
+										<a href="#" class="fixed-menu__link">НОВОСТИ</a>
+									</li>
+									<li class="fixed-menu__item">
+										<a href="#" class="fixed-menu__link">ТЕЛЕПРОГРАММА</a>
+									</li>
+									<li class="fixed-menu__item">
+										<a href="#" class="fixed-menu__link">ПРЯМОЙ ЭФИР</a>
+									</li>
+									<li class="fixed-menu__item">
+										<a href="#" class="fixed-menu__link">ВИДЕОТЕКА</a>
+									</li>
+									<li class="fixed-menu__item">
+										<a href="#" class="fixed-menu__link">О КОМПАНИИ</a>
+									</li>
+									<li class="fixed-menu__item">
+										<a href="#" class="fixed-menu__link">16+</a>
+									</li>
+								</ul>
+								<span class="main-menu__btn-search main-menu__btn-search_fixed"></span>
+								<a href="#" class="fixed-menu__nastroenie">NASTROENIE.TV</a>
+							</div>
+						</div>
+					</div>
+					<!-- .content [ -->
+					<div class="content">
+						<div class="main">
+							<div class="container">
+								<!-- .main-news__list [ -->
+								<div class="main-news__list" data-page-url="/some-url/">
+									<div class="main-news__item main-news__item_small"  data-page-url="/some-url/">
+										<a href="#" class="main-news__item-inner">
+											<div class="main-news__img-wrap">
+												<img class="main-news__img" src="assets/img/content/samolet.jpg" alt="">
+											</div>
+										</a>
+										<div class="main-news__info">
+											<div class="main-news__item-tag">
+												<a href="#" class="main-news__item-tag-text">ПРОИСШЕСТВИЕ</a>
+											</div>
+											<a class="main-news__item-title-link" href="#">
+												<div class="main-news__title"><span>На месте аварии Ил-18 в Якутии изъяты «черные ящики»</span></div>
+												<div class="main-news__anons">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet, dolores, eveniet expedita harum iure libero molestias officia placeat porro possimus praesentium quam sequi soluta tenetur totam velit veritatis? Cumque impedit mollitia natus omnis sed vero voluptatum? Ab, amet at distinctio doloremque ea expedita fugiat illum incidunt maxime, nesciunt officiis perferendis quasi quos repellat tempore, tenetur ut! Dicta doloremque laborum magnam neque pariatur provident quia sequi tempora, ut voluptatum. Autem dolores inventore iusto natus perferendis, quae quaerat quibusdam reprehenderit soluta tempora, unde veritatis vero voluptate. Aliquam aut consequuntur esse harum hic nihil nostrum quaerat recusandae sapiente soluta, velit voluptate!
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="main-news__item main-news__item_small"  data-page-url="/some-url/">
+										<a href="#" class="main-news__item-inner">
+											<div class="main-news__img-wrap">
+												<img class="main-news__img" src="assets/img/content/dps.jpg" alt="">
+											</div>
+										</a>
+										<div class="main-news__info">
+											<div class="main-news__item-tag">
+												<a href="#" class="main-news__item-tag-text">ПРОИСШЕСТВИЕ ГОРОД МОСКВА</a>
+											</div>
+											<a class="main-news__item-title-link" href="#">
+												<div class="main-news__title"><span>Водитель-наркоман протаранил автомобиль Росгвардии в Москве</span></div>
+											</a>
+										</div>
+									</div>
+									<div class="main-news__item main-news__item_big"  data-page-url="/some-url/">
+										<a href="#" class="main-news__item-inner">
+											<div class="main-news__img-wrap">
+												<img class="main-news__img" src="assets/img/content/moskva-reka.jpg" alt="">
+											</div>
+										</a>
+										<div class="main-news__info">
+											<div class="main-news__item-tag">
+												<a href="#" class="main-news__item-tag-text">ПРОИСШЕСТВИЕ</a>
+												<i class="ico-video"></i>
+											</div>
+											<a class="main-news__item-title-link" href="">
+												<div class="main-news__title"><span>Главврач московской клиники пытался пройти на концерт в Кремль с боеприпасом</span></div>
+											</a>
+										</div>
+									</div>
+									<div class="main-news__item main-news__item_big"  data-page-url="/some-url/">
+										<a href="#" class="main-news__item-inner">
+											<div class="main-news__img-wrap">
+												<img class="main-news__img" src="assets/img/content/miha.jpg" alt="">
+											</div>
+										</a>
+										<div class="main-news__info">
+											<div class="main-news__item-tag">
+												<a href="#" class="main-news__item-tag-text">ИСКУССТВО</a>
+											</div>
+											<a class="main-news__item-title-link" href="#">
+												<div class="main-news__title"><span>Россияне отметили повышение качества отечественного кино</span></div>
+											</a>
+										</div>
+									</div>
+									<div class="main-news__item main-news__item_small"  data-page-url="/some-url/">
+										<a href="#" class="main-news__item-inner">
+											<div class="main-news__img-wrap">
+												<img class="main-news__img" src="assets/img/content/bobsley.jpg" alt="">
+											</div>
+										</a>
+										<div class="main-news__info">
+											<div class="main-news__item-tag">
+												<a href="#" class="main-news__item-tag-text">СПОРТ</a>
+											</div>
+											<a class="main-news__item-title-link" href="#">
+												<div class="main-news__title"><span>WADA признало, что в докладе Макларена нет доказательств вины россиян</span></div>
+												<div class="main-news__anons">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet, dolores, eveniet expedita harum iure libero molestias officia placeat porro possimus praesentium quam sequi soluta tenetur totam velit veritatis? Cumque impedit mollitia natus omnis sed vero voluptatum? Ab, amet at distinctio doloremque ea expedita fugiat illum incidunt maxime, nesciunt officiis perferendis quasi quos repellat tempore, tenetur ut! Dicta doloremque laborum magnam neque pariatur provident quia sequi tempora, ut voluptatum. Autem dolores inventore iusto natus perferendis, quae quaerat quibusdam reprehenderit soluta tempora, unde veritatis vero voluptate. Aliquam aut consequuntur esse harum hic nihil nostrum quaerat recusandae sapiente soluta, velit voluptate!
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="main-news__item main-news__item_small"  data-page-url="/some-url/">
+										<a href="#" class="main-news__item-inner">
+											<div class="main-news__img-wrap main-news__img-wrap_banner">
+												<img src="assets/img/content/banner.jpg" alt="">
+											</div>
+										</a>
+									</div>
+									<div class="main-news__item main-news__item_small"  data-page-url="/some-url/">
+										<a href="#" class="main-news__item-inner">
+											<div class="main-news__img-wrap">
+												<img class="main-news__img" src="assets/img/content/golos.jpg" alt="">
+												<i class="ico-video ico-video_small-news"></i>
+											</div>
+										</a>
+										<div class="main-news__info">
+											<div class="main-news__item-tag">
+												<a href="#" class="main-news__item-tag-text">ПЕРЕДАЧА</a>
+											</div>
+											<a class="main-news__item-title-link" href="#">
+												<div class="main-news__title"><span>Право голоса. «Битва стратегов?»</span></div>
+											</a>
+										</div>
+									</div>
+									<div class="main-news__item main-news__item_small"  data-page-url="/some-url/">
+										<a href="#" class="main-news__item-inner">
+											<div class="main-news__img-wrap">
+												<img class="main-news__img" src="assets/img/content/sobyanin.jpg" alt="">
+											</div>
+										</a>
+										<div class="main-news__info">
+											<div class="main-news__item-tag">
+												<a href="#" class="main-news__item-tag-text">ГОРОД</span>
+											</div>
+											<a class="main-news__item-title-link" href="#">
+												<div class="main-news__title"><span>Собянин: гостиничная индустрия Москвы активно развивается</span></div>
+											</a>
+										</div>
+									</div>
+									<div class="main-news__item main-news__item_small"  data-page-url="/some-url/">
+										<a href="#" class="main-news__item-inner">
+											<div class="main-news__img-wrap">
+												<img class="main-news__img" src="assets/img/content/ded.jpg" alt="">
+												<i class="ico-video ico-video_small-news"></i>
+											</div>
+										</a>
+										<div class="main-news__info">
+											<div class="main-news__item-tag">
+												<a href="#" class="main-news__item-tag-text">ВИДЕО ПЕРЕДАЧА</a>
+											</div>
+											<a href="#" class="main-news__item-title-link">
+												<div class="main-news__title"><span>«Мой герой». В гостях Артем Михалков.</span></div>
+											</a>
+										</div>
+									</div>
+									<div class="main-news__item main-news__item_small"  data-page-url="/some-url/">
+										<a href="#" class="main-news__item-inner">
+											<div class="main-news__img-wrap">
+												<img class="main-news__img" src="assets/img/content/skoraya.jpg" alt="">
+												<i class="ico-video ico-video_small-news"></i>
+											</div>
+										</a>
+										<div class="main-news__info">
+											<div class="main-news__item-tag">
+												<a href="#" class="main-news__item-tag-text">ВИДЕО  ПРОИСШЕСТВИЯ</a>
+											</div>
+											<a href="#" class="main-news__item-title-link">
+												<div class="main-news__title"><span>В Ленинградской области оставленный скорой ребенок погиб от кишечного гриппа</span></div>
+											</a>
+										</div>
+									</div>
+									<div class="main-news__item main-news__item_full" data-page-url="/some-url/">
+										<a href="#" class="main-news__item-inner">
+											<div class="main-news__img-wrap">
+												<img class="main-news__img" src="assets/img/content/sport.jpg" alt="">
+											</div>
+										</a>
+										<div class="main-news__info">
+											<div class="main-news__item-tag">
+												<a href="#" class="main-news__item-tag-text">ГОРОД ОТДЫХ СПОРТ</a>
+											</div>
+											<a href="#" class="main-news__item-title-link">
+												<div class="main-news__title"><span>Дождь не помешал москвичам принять участие в акции «На работу на велосипеде»</span></div>
+											</a>
+										</div>
+									</div>
+									<div class="main-news__item main-news__item_small"  data-page-url="/some-url/">
+										<a href="#" class="main-news__item-inner">
+											<div class="main-news__img-wrap">
+												<img class="main-news__img" src="assets/img/content/sobytiya.jpg" alt="">
+											</div>
+										</a>
+										<div class="main-news__info">
+											<div class="main-news__item-tag">
+												<a href="#" class="main-news__item-tag-text">ПЕРЕДАЧА</a>
+											</div>
+											<a href="#" class="main-news__item-title-link">
+												<div class="main-news__title"><span>«События» эфир от 16.12.2016</span></div>
+											</a>
+										</div>
+									</div>
+									<div class="main-news__item main-news__item_small"  data-page-url="/some-url/">
+										<a href="#" class="main-news__item-inner">
+											<div class="main-news__img-wrap">
+												<img class="main-news__img" src="assets/img/content/vdnh.jpg" alt="">
+											</div>
+										</a>
+										<div class="main-news__info">
+											<div class="main-news__item-tag">
+												<a href="#" class="main-news__item-tag-text">КУЛЬТУРА  ОТДЫХ  ФЕСТИВАЛЬ МАСЛЕНИЦА</a>
+											</div>
+											<a href="#" class="main-news__item-title-link">
+												<div class="main-news__title"><span>На ВДНХ открылась масленичная ярмарка с экзотическими блинами</span></div>
+											</a>
+										</div>
+									</div>
+									<div class="main-news__item main-news__item_big"  data-page-url="/some-url/">
+										<a href="#" class="main-news__item-inner">
+											<div class="main-news__img-wrap">
+												<img class="main-news__img" src="assets/img/content/kreml.jpg" alt="">
+											</div>
+										</a>
+										<div class="main-news__info">
+											<div class="main-news__item-tag">
+												<a href="#" class="main-news__item-tag-text">ГОРОД</a>
+												<i class="ico-video"></i>
+											</div>
+											<a href="#" class="main-news__item-title-link">
+												<div class="main-news__title"><span>На Красной площади проходит генеральная репетиция парада</span></div>
+											</a>
+										</div>
+									</div>
+									<div class="main-news__item main-news__item_middle" data-page-url="/some-url/">
+										<a href="#" class="main-news__item-inner">
+											<div class="main-news__img-wrap">
+												<img class="main-news__img" src="assets/img/content/raketa.jpg" alt="">
+											</div>
+										</a>
+										<div class="main-news__info">
+											<div class="main-news__item-tag">
+												<a href="#" class="main-news__item-tag-text">ПРОИСШЕСТВИЕ</a>
+												<i class="ico-video"></i>
+											</div>
+											<a href="#" class="main-news__item-title-link">
+												<div class="main-news__title"><span>Сирийская армия возобновила зачистку пригородов Дамаска</span></div>
+											</a>
+										</div>
+									</div>
+									<div class="main-news__item main-news__item_small"  data-page-url="/some-url/">
+										<a href="#" class="main-news__item-inner">
+											<div class="main-news__img-wrap">
+												<img class="main-news__img" src="assets/img/content/gai.jpg" alt="">
+												<i class="ico-video ico-video_small-news"></i>
+											</div>
+										</a>
+										<div class="main-news__info">
+											<div class="main-news__item-tag">
+												<a href="#" class="main-news__item-tag-text">ГОРОД</a>
+											</div>
+											<a href="#" class="main-news__item-title-link">
+												<div class="main-news__title"><span>Мужчина, бросивший взрывчатку в инспекторов ГАИ, задержан</span></div>
+											</a>
+										</div>
+									</div>
+									<div class="main-news__item main-news__item_big"  data-page-url="/some-url/">
+										<a href="#" class="main-news__item-inner">
+											<div class="main-news__img-wrap">
+												<img class="main-news__img" src="assets/img/content/ren.jpg" alt="">
+											</div>
+										</a>
+										<div class="main-news__info">
+											<div class="main-news__item-tag">
+												<a href="#" class="main-news__item-tag-text">ГОРОД</a>
+												<i class="ico-video"></i>
+											</div>
+											<a href="#" class="main-news__item-title-link">
+												<div class="main-news__title"><span>Жителей столичных "хрущевок" не планируют переселять в Новую Москву</span></div>
+											</a>
+										</div>
+									</div>
+									<div class="main-news__item main-news__item_small"  data-page-url="/some-url/">
+										<a href="#" class="main-news__item-inner">
+											<div class="main-news__img-wrap">
+												<img class="main-news__img" src="assets/img/content/botex.jpg" alt="">
+												<i class="ico-video ico-video_small-news"></i>
+											</div>
+										</a>
+										<div class="main-news__info">
+											<div class="main-news__item-tag">
+												<a href="#" class="main-news__item-tag-text">ПОЛИТИКА ГОРОД  МОСКВА</a>
+											</div>
+											<a href="#" class="main-news__item-title-link">
+												<div class="main-news__title"><span>Путин пригласил президента Таджикистана в Россию</span></div>
+											</a>
+										</div>
+									</div>
+									<div class="main-news__item main-news__item_small"  data-page-url="/some-url/">
+										<a href="#" class="main-news__item-inner">
+											<div class="main-news__img-wrap">
+												<img class="main-news__img" src="assets/img/content/bobsl-2.jpg" alt="">
+												<i class="ico-video ico-video_small-news"></i>
+											</div>
+										</a>
+										<div class="main-news__info">
+											<div class="main-news__item-tag">
+												<a href="#" class="main-news__item-tag-text">СПОРТ</a>
+											</div>
+											<a href="#" class="main-news__item-title-link">
+												<div class="main-news__title"><span>ЧМ по бобслею и скелетону 2017 года пройдет в Германии</span></div>
+											</a>
+										</div>
+									</div>
+									<div class="main-news__item main-news__item_small"  data-page-url="/some-url/">
+										<a href="#" class="main-news__item-inner">
+											<div class="main-news__img-wrap">
+												<img class="main-news__img" src="assets/img/content/doroga.jpg" alt="">
+												<i class="ico-video ico-video_small-news"></i>
+											</div>
+										</a>
+										<div class="main-news__info">
+											<div class="main-news__item-tag">
+												<a href="#" class="main-news__item-tag-text">ГОРОД</a>
+											</div>
+											<a href="#" class="main-news__item-title-link">
+												<div class="main-news__title"><span>Полиция проверяет информацию о похищении девушки в столице</span></div>
+											</a>
+										</div>
+									</div>
+									<div class="main-news__item main-news__item_middle" data-page-url="/some-url/">
+										<a href="#" class="main-news__item-inner">
+											<div class="main-news__img-wrap">
+												<img class="main-news__img" src="assets/img/content/pravo.jpg" alt="">
+											</div>
+										</a>
+									</div>
+									<div class="main-news__item main-news__item_small"  data-page-url="/some-url/">
+										<a href="#" class="main-news__item-inner">
+											<div class="main-news__img-wrap">
+												<img class="main-news__img" src="assets/img/content/tramvay.jpg" alt="">
+												<i class="ico-video ico-video_small-news"></i>
+											</div>
+										</a>
+										<div class="main-news__info">
+											<div class="main-news__item-tag">
+												<a href="#" class="main-news__item-tag-text">ГОРОД</a>
+											</div>
+											<a href="#" class="main-news__item-title-link">
+												<div class="main-news__title"><span>Московские трамваи отмечают 115-летний юбилей</span></div>
+											</a>
+										</div>
+									</div>
+									<div class="main-news__item main-news__item_big"  data-page-url="/some-url/">
+										<a href="#" class="main-news__item-inner">
+											<div class="main-news__img-wrap">
+												<img class="main-news__img" src="assets/img/content/shobla.jpg" alt="">
+											</div>
+										</a>
+										<div class="main-news__info">
+											<div class="main-news__item-tag">
+												<a href="#" class="main-news__item-tag-text">ГОРОД</a>
+												<i class="ico-video"></i>
+											</div>
+											<a href="#" class="main-news__item-title-link">
+												<div class="main-news__title"><span>Путин поздравил военных с Днем сил спецопераций</span></div>
+											</a>
+										</div>
+									</div>
+									<div class="main-news__item main-news__item_small"  data-page-url="/some-url/">
+										<a href="#" class="main-news__item-inner">
+											<div class="main-news__img-wrap">
+												<img class="main-news__img" src="assets/img/content/neft.jpg" alt="">
+											</div>
+										</a>
+										<div class="main-news__info">
+											<div class="main-news__item-tag">
+												<a href="#" class="main-news__item-tag-text">ПРОИСШЕСТВИЕ</a>
+											</div>
+											<a href="#" class="main-news__item-title-link">
+												<div class="main-news__title"><span>Цены на нефть могут экстремально пойти вверх</span></div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<!-- ] .main-news__list -->
+								<div class="news__loader">
+									<img src="assets/img/loader.gif" alt="">
+								</div>
+								<div class="more-btn__wrap">
+									<span class="more-btn"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ] .content -->
+					<div class="footer">
+						<div class="container">
+							<div class="footer__top">
+								<div class="footer__top-left">
+									<p>Copyright © 2007-2017 АО «ТВ Центр»</p>
+									<p>На сайте работает система коррекции ошибок. </p>
+									<p>Обнаружив неточность в тексте, выделите ее и нажмите Ctrl+Enter.</p>
+								</div>
+								<div class="footer__top-right">
+									<p>Партнеры сайта : Рамблер </p>
+									<p>проект Активный гражданин,</p>
+									<p>проект Георгиевская лента онлайн</p>
+								</div>
+							</div>
+							<div class="footer__advert">Реклама на сайте <a href="tel:+74957854268">+7 (495) 785-42-68</a></div>
+							<div class="footer__advert">Реклама в эфире телеканала <a href="tel:+74957854131">+7 (495) 785-41-31</a> <a href="mailto:reklama@tvc.ru">reklama@tvc.ru</a></div>
+							<div class="footer__tv-center">Сетевое издание "ТВ Центр-Москва". Свидетельство о регистрации СМИ Эл № ФС77-63915 от 09 декабря 2015 года выдано Федеральной службой по надзору в сфере связи, информационных технологий и массовых коммуникаций. </div>
+							<div class="footer__turn-on"><img src="assets/img/logo-ftr.png" alt=""></div>
+						</div>
+					</div>
+				</div>
+				<!-- ] .content-inner -->
+			</div>
+			<div class="nav-mobile">
+				<ul class="nav-mobile__menu-list">
+					<li class="nav-mobile__menu-item"><a href="" class="nav-mobile__menu-link">ТЕЛЕКАНАЛ</a></li>
+					<li class="nav-mobile__menu-item"><a href="" class="nav-mobile__menu-link">О КОМПАНИИ</a></li>
+					<li class="nav-mobile__menu-item"><a href="" class="nav-mobile__menu-link">НОВОСТИ</a></li>
+					<li class="nav-mobile__menu-item"><a href="" class="nav-mobile__menu-link">ПРОГРАММА ПЕРЕДАЧ</a></li>
+					<li class="nav-mobile__menu-item"><a href="" class="nav-mobile__menu-link">ПРЯМОЙ ЭФИР</a></li>
+					<li class="nav-mobile__menu-item"><a href="" class="nav-mobile__menu-link">ВИДЕО</a></li>
+					<li class="nav-mobile__menu-item"><a href="" class="nav-mobile__menu-link">ПЕРСОНЫ</a></li>
+					<li class="nav-mobile__menu-item"><a href="" class="nav-mobile__menu-link">16+</a></li>
+					<li class="nav-mobile__menu-item"><a href="" class="nav-mobile__menu-link nav-mobile__menu-link_nastroenie">NASTROENIE.TV</a></li>
+				</ul>
+			</div>
+		</div>
+		<script src="assets/js/libs/jquery/jquery.min.js"></script>
+		<script src="assets/js/libs/masonry/masonry.pkgd.min.js"></script>
+		<script src="assets/js/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+		<script src="assets/js/libs/air-datepicker/datepicker.min.js"></script>
+		<script src="assets/js/common.js"></script>
+
+		<!-- На продакшене этот блок не нужен -->
+		<template id="tmp-series">
+
+			<div class="main-news__item main-news__item_small">
+				<a href="#" class="main-news__item-inner">
+					<div class="main-news__img-wrap">
+						<img class="main-news__img" src="assets/img/content/samolet.jpg" alt="">
+					</div>
+				</a>
+				<div class="main-news__info">
+					<div class="main-news__item-tag">
+						<a href="#" class="main-news__item-tag-text">ПРОИСШЕСТВИЕ</a>
+					</div>
+					<a class="main-news__item-title-link" href="#">
+						<div class="main-news__title"><span>На месте аварии Ил-18 в Якутии изъяты «черные ящики»</span></div>
+						<div class="main-news__anons">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet, dolores, eveniet expedita harum iure libero molestias officia placeat porro possimus praesentium quam sequi soluta tenetur totam velit veritatis? Cumque impedit mollitia natus omnis sed vero voluptatum? Ab, amet at distinctio doloremque ea expedita fugiat illum incidunt maxime, nesciunt officiis perferendis quasi quos repellat tempore, tenetur ut! Dicta doloremque laborum magnam neque pariatur provident quia sequi tempora, ut voluptatum. Autem dolores inventore iusto natus perferendis, quae quaerat quibusdam reprehenderit soluta tempora, unde veritatis vero voluptate. Aliquam aut consequuntur esse harum hic nihil nostrum quaerat recusandae sapiente soluta, velit voluptate!
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="main-news__item main-news__item_small">
+				<a href="#" class="main-news__item-inner">
+					<div class="main-news__img-wrap">
+						<img class="main-news__img" src="assets/img/content/dps.jpg" alt="">
+					</div>
+				</a>
+				<div class="main-news__info">
+					<div class="main-news__item-tag">
+						<a href="#" class="main-news__item-tag-text">ПРОИСШЕСТВИЕ ГОРОД МОСКВА</a>
+					</div>
+					<a class="main-news__item-title-link" href="#">
+						<div class="main-news__title"><span>Водитель-наркоман протаранил автомобиль Росгвардии в Москве</span></div>
+					</a>
+				</div>
+			</div>
+			<div class="main-news__item main-news__item_big">
+				<a href="#" class="main-news__item-inner">
+					<div class="main-news__img-wrap">
+						<img class="main-news__img" src="assets/img/content/moskva-reka.jpg" alt="">
+					</div>
+				</a>
+				<div class="main-news__info">
+					<div class="main-news__item-tag">
+						<a href="#" class="main-news__item-tag-text">ПРОИСШЕСТВИЕ</a>
+						<i class="ico-video"></i>
+					</div>
+					<a class="main-news__item-title-link" href="">
+						<div class="main-news__title"><span>Главврач московской клиники пытался пройти на концерт в Кремль с боеприпасом</span></div>
+					</a>
+				</div>
+			</div>
+			<div class="main-news__item main-news__item_big">
+				<a href="#" class="main-news__item-inner">
+					<div class="main-news__img-wrap">
+						<img class="main-news__img" src="assets/img/content/miha.jpg" alt="">
+					</div>
+				</a>
+				<div class="main-news__info">
+					<div class="main-news__item-tag">
+						<a href="#" class="main-news__item-tag-text">ИСКУССТВО</a>
+					</div>
+					<a class="main-news__item-title-link" href="#">
+						<div class="main-news__title"><span>Россияне отметили повышение качества отечественного кино</span></div>
+					</a>
+				</div>
+			</div>
+			<div class="main-news__item main-news__item_small">
+				<a href="#" class="main-news__item-inner">
+					<div class="main-news__img-wrap">
+						<img class="main-news__img" src="assets/img/content/bobsley.jpg" alt="">
+					</div>
+				</a>
+				<div class="main-news__info">
+					<div class="main-news__item-tag">
+						<a href="#" class="main-news__item-tag-text">СПОРТ</a>
+					</div>
+					<a class="main-news__item-title-link" href="#">
+						<div class="main-news__title"><span>WADA признало, что в докладе Макларена нет доказательств вины россиян</span></div>
+						<div class="main-news__anons">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet, dolores, eveniet expedita harum iure libero molestias officia placeat porro possimus praesentium quam sequi soluta tenetur totam velit veritatis? Cumque impedit mollitia natus omnis sed vero voluptatum? Ab, amet at distinctio doloremque ea expedita fugiat illum incidunt maxime, nesciunt officiis perferendis quasi quos repellat tempore, tenetur ut! Dicta doloremque laborum magnam neque pariatur provident quia sequi tempora, ut voluptatum. Autem dolores inventore iusto natus perferendis, quae quaerat quibusdam reprehenderit soluta tempora, unde veritatis vero voluptate. Aliquam aut consequuntur esse harum hic nihil nostrum quaerat recusandae sapiente soluta, velit voluptate!
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="main-news__item main-news__item_small">
+				<a href="#" class="main-news__item-inner">
+					<div class="main-news__img-wrap main-news__img-wrap_banner">
+						<img src="assets/img/content/banner.jpg" alt="">
+					</div>
+				</a>
+			</div>
+			<div class="main-news__item main-news__item_small">
+				<a href="#" class="main-news__item-inner">
+					<div class="main-news__img-wrap">
+						<img class="main-news__img" src="assets/img/content/golos.jpg" alt="">
+						<i class="ico-video ico-video_small-news"></i>
+					</div>
+				</a>
+				<div class="main-news__info">
+					<div class="main-news__item-tag">
+						<a href="#" class="main-news__item-tag-text">ПЕРЕДАЧА</a>
+					</div>
+					<a class="main-news__item-title-link" href="#">
+						<div class="main-news__title"><span>Право голоса. «Битва стратегов?»</span></div>
+					</a>
+				</div>
+			</div>
+			<div class="main-news__item main-news__item_small">
+				<a href="#" class="main-news__item-inner">
+					<div class="main-news__img-wrap">
+						<img class="main-news__img" src="assets/img/content/sobyanin.jpg" alt="">
+					</div>
+				</a>
+				<div class="main-news__info">
+					<div class="main-news__item-tag">
+						<a href="#" class="main-news__item-tag-text">ГОРОД</span>
+					</div>
+					<a class="main-news__item-title-link" href="#">
+						<div class="main-news__title"><span>Собянин: гостиничная индустрия Москвы активно развивается</span></div>
+					</a>
+				</div>
+			</div>
+			<div class="main-news__item main-news__item_small">
+				<a href="#" class="main-news__item-inner">
+					<div class="main-news__img-wrap">
+						<img class="main-news__img" src="assets/img/content/ded.jpg" alt="">
+						<i class="ico-video ico-video_small-news"></i>
+					</div>
+				</a>
+				<div class="main-news__info">
+					<div class="main-news__item-tag">
+						<a href="#" class="main-news__item-tag-text">ВИДЕО ПЕРЕДАЧА</a>
+					</div>
+					<a href="#" class="main-news__item-title-link">
+						<div class="main-news__title"><span>«Мой герой». В гостях Артем Михалков.</span></div>
+					</a>
+				</div>
+			</div>
+			<div class="main-news__item main-news__item_small">
+				<a href="#" class="main-news__item-inner">
+					<div class="main-news__img-wrap">
+						<img class="main-news__img" src="assets/img/content/skoraya.jpg" alt="">
+						<i class="ico-video ico-video_small-news"></i>
+					</div>
+				</a>
+				<div class="main-news__info">
+					<div class="main-news__item-tag">
+						<a href="#" class="main-news__item-tag-text">ВИДЕО  ПРОИСШЕСТВИЯ</a>
+					</div>
+					<a href="#" class="main-news__item-title-link">
+						<div class="main-news__title"><span>В Ленинградской области оставленный скорой ребенок погиб от кишечного гриппа</span></div>
+					</a>
+				</div>
+			</div>
+			<div class="main-news__item main-news__item_full">
+				<a href="#" class="main-news__item-inner">
+					<div class="main-news__img-wrap">
+						<img class="main-news__img" src="assets/img/content/sport.jpg" alt="">
+					</div>
+				</a>
+				<div class="main-news__info">
+					<div class="main-news__item-tag">
+						<a href="#" class="main-news__item-tag-text">ГОРОД ОТДЫХ СПОРТ</a>
+					</div>
+					<a href="#" class="main-news__item-title-link">
+						<div class="main-news__title"><span>Дождь не помешал москвичам принять участие в акции «На работу на велосипеде»</span></div>
+					</a>
+				</div>
+			</div>
+			<div class="main-news__item main-news__item_small">
+				<a href="#" class="main-news__item-inner">
+					<div class="main-news__img-wrap">
+						<img class="main-news__img" src="assets/img/content/sobytiya.jpg" alt="">
+					</div>
+				</a>
+				<div class="main-news__info">
+					<div class="main-news__item-tag">
+						<a href="#" class="main-news__item-tag-text">ПЕРЕДАЧА</a>
+					</div>
+					<a href="#" class="main-news__item-title-link">
+						<div class="main-news__title"><span>«События» эфир от 16.12.2016</span></div>
+					</a>
+				</div>
+			</div>
+			<div class="main-news__item main-news__item_small">
+				<a href="#" class="main-news__item-inner">
+					<div class="main-news__img-wrap">
+						<img class="main-news__img" src="assets/img/content/vdnh.jpg" alt="">
+					</div>
+				</a>
+				<div class="main-news__info">
+					<div class="main-news__item-tag">
+						<a href="#" class="main-news__item-tag-text">КУЛЬТУРА  ОТДЫХ  ФЕСТИВАЛЬ МАСЛЕНИЦА</a>
+					</div>
+					<a href="#" class="main-news__item-title-link">
+						<div class="main-news__title"><span>На ВДНХ открылась масленичная ярмарка с экзотическими блинами</span></div>
+					</a>
+				</div>
+			</div>
+			<div class="main-news__item main-news__item_big">
+				<a href="#" class="main-news__item-inner">
+					<div class="main-news__img-wrap">
+						<img class="main-news__img" src="assets/img/content/kreml.jpg" alt="">
+					</div>
+				</a>
+				<div class="main-news__info">
+					<div class="main-news__item-tag">
+						<a href="#" class="main-news__item-tag-text">ГОРОД</a>
+						<i class="ico-video"></i>
+					</div>
+					<a href="#" class="main-news__item-title-link">
+						<div class="main-news__title"><span>На Красной площади проходит генеральная репетиция парада</span></div>
+					</a>
+				</div>
+			</div>
+			<div class="main-news__item main-news__item_middle">
+				<a href="#" class="main-news__item-inner">
+					<div class="main-news__img-wrap">
+						<img class="main-news__img" src="assets/img/content/raketa.jpg" alt="">
+					</div>
+				</a>
+				<div class="main-news__info">
+					<div class="main-news__item-tag">
+						<a href="#" class="main-news__item-tag-text">ПРОИСШЕСТВИЕ</a>
+						<i class="ico-video"></i>
+					</div>
+					<a href="#" class="main-news__item-title-link">
+						<div class="main-news__title"><span>Сирийская армия возобновила зачистку пригородов Дамаска</span></div>
+					</a>
+				</div>
+			</div>
+			<div class="main-news__item main-news__item_small">
+				<a href="#" class="main-news__item-inner">
+					<div class="main-news__img-wrap">
+						<img class="main-news__img" src="assets/img/content/gai.jpg" alt="">
+						<i class="ico-video ico-video_small-news"></i>
+					</div>
+				</a>
+				<div class="main-news__info">
+					<div class="main-news__item-tag">
+						<a href="#" class="main-news__item-tag-text">ГОРОД</a>
+					</div>
+					<a href="#" class="main-news__item-title-link">
+						<div class="main-news__title"><span>Мужчина, бросивший взрывчатку в инспекторов ГАИ, задержан</span></div>
+					</a>
+				</div>
+			</div>
+			<div class="main-news__item main-news__item_big">
+				<a href="#" class="main-news__item-inner">
+					<div class="main-news__img-wrap">
+						<img class="main-news__img" src="assets/img/content/ren.jpg" alt="">
+					</div>
+				</a>
+				<div class="main-news__info">
+					<div class="main-news__item-tag">
+						<a href="#" class="main-news__item-tag-text">ГОРОД</a>
+						<i class="ico-video"></i>
+					</div>
+					<a href="#" class="main-news__item-title-link">
+						<div class="main-news__title"><span>Жителей столичных "хрущевок" не планируют переселять в Новую Москву</span></div>
+					</a>
+				</div>
+			</div>
+			<div class="main-news__item main-news__item_small">
+				<a href="#" class="main-news__item-inner">
+					<div class="main-news__img-wrap">
+						<img class="main-news__img" src="assets/img/content/botex.jpg" alt="">
+						<i class="ico-video ico-video_small-news"></i>
+					</div>
+				</a>
+				<div class="main-news__info">
+					<div class="main-news__item-tag">
+						<a href="#" class="main-news__item-tag-text">ПОЛИТИКА ГОРОД  МОСКВА</a>
+					</div>
+					<a href="#" class="main-news__item-title-link">
+						<div class="main-news__title"><span>Путин пригласил президента Таджикистана в Россию</span></div>
+					</a>
+				</div>
+			</div>
+			<div class="main-news__item main-news__item_small">
+				<a href="#" class="main-news__item-inner">
+					<div class="main-news__img-wrap">
+						<img class="main-news__img" src="assets/img/content/bobsl-2.jpg" alt="">
+						<i class="ico-video ico-video_small-news"></i>
+					</div>
+				</a>
+				<div class="main-news__info">
+					<div class="main-news__item-tag">
+						<a href="#" class="main-news__item-tag-text">СПОРТ</a>
+					</div>
+					<a href="#" class="main-news__item-title-link">
+						<div class="main-news__title"><span>ЧМ по бобслею и скелетону 2017 года пройдет в Германии</span></div>
+					</a>
+				</div>
+			</div>
+			<div class="main-news__item main-news__item_small">
+				<a href="#" class="main-news__item-inner">
+					<div class="main-news__img-wrap">
+						<img class="main-news__img" src="assets/img/content/doroga.jpg" alt="">
+						<i class="ico-video ico-video_small-news"></i>
+					</div>
+				</a>
+				<div class="main-news__info">
+					<div class="main-news__item-tag">
+						<a href="#" class="main-news__item-tag-text">ГОРОД</a>
+					</div>
+					<a href="#" class="main-news__item-title-link">
+						<div class="main-news__title"><span>Полиция проверяет информацию о похищении девушки в столице</span></div>
+					</a>
+				</div>
+			</div>
+			<div class="main-news__item main-news__item_middle">
+				<a href="#" class="main-news__item-inner">
+					<div class="main-news__img-wrap">
+						<img class="main-news__img" src="assets/img/content/pravo.jpg" alt="">
+					</div>
+				</a>
+			</div>
+			<div class="main-news__item main-news__item_small">
+				<a href="#" class="main-news__item-inner">
+					<div class="main-news__img-wrap">
+						<img class="main-news__img" src="assets/img/content/tramvay.jpg" alt="">
+						<i class="ico-video ico-video_small-news"></i>
+					</div>
+				</a>
+				<div class="main-news__info">
+					<div class="main-news__item-tag">
+						<a href="#" class="main-news__item-tag-text">ГОРОД</a>
+					</div>
+					<a href="#" class="main-news__item-title-link">
+						<div class="main-news__title"><span>Московские трамваи отмечают 115-летний юбилей</span></div>
+					</a>
+				</div>
+			</div>
+			<div class="main-news__item main-news__item_big">
+				<a href="#" class="main-news__item-inner">
+					<div class="main-news__img-wrap">
+						<img class="main-news__img" src="assets/img/content/shobla.jpg" alt="">
+					</div>
+				</a>
+				<div class="main-news__info">
+					<div class="main-news__item-tag">
+						<a href="#" class="main-news__item-tag-text">ГОРОД</a>
+						<i class="ico-video"></i>
+					</div>
+					<a href="#" class="main-news__item-title-link">
+						<div class="main-news__title"><span>Путин поздравил военных с Днем сил спецопераций</span></div>
+					</a>
+				</div>
+			</div>
+			<div class="main-news__item main-news__item_small">
+				<a href="#" class="main-news__item-inner">
+					<div class="main-news__img-wrap">
+						<img class="main-news__img" src="assets/img/content/neft.jpg" alt="">
+					</div>
+				</a>
+				<div class="main-news__info">
+					<div class="main-news__item-tag">
+						<a href="#" class="main-news__item-tag-text">ПРОИСШЕСТВИЕ</a>
+					</div>
+					<a href="#" class="main-news__item-title-link">
+						<div class="main-news__title"><span>Цены на нефть могут экстремально пойти вверх</span></div>
+					</a>
+				</div>
+			</div>
+		</template><!-- На продакшене этот блок не нужен -->
+	</body>
+</html>

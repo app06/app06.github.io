@@ -1,0 +1,17 @@
+.ico-rdt-active, .ico-rdt, .ico-tw-active, .ico-tw, .ico-tlg, 
+.ico-tlg-png, .ico-med-active, .ico-med, .ico-btc-active, .ico-btc, 
+.ico-fb-active, .ico-fb
+{ display: inline-block; background: url('png.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+ 
+.ico-rdt-active { background-position: -4px -0px; width: 38px; height: 32px; }
+.ico-rdt { background-position: -4px -36px; width: 38px; height: 32px; }
+.ico-tw-active { background-position: -4px -72px; width: 36px; height: 30px; }
+.ico-tw { background-position: -4px -106px; width: 36px; height: 30px; }
+.ico-tlg { background-position: -4px -140px; width: 34px; height: 30px; }
+.ico-tlg-png { background-position: -4px -174px; width: 34px; height: 30px; }
+.ico-med-active { background-position: -4px -208px; width: 30px; height: 26px; }
+.ico-med { background-position: -4px -238px; width: 30px; height: 26px; }
+.ico-btc-active { background-position: -4px -268px; width: 28px; height: 36px; }
+.ico-btc { background-position: -4px -308px; width: 28px; height: 36px; }
+.ico-fb-active { background-position: -4px -348px; width: 18px; height: 34px; }
+.ico-fb { background-position: -4px -386px; width: 18px; height: 34px; }
