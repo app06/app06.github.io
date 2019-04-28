@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Acronis';
+    src: url('../fonts/Acronis/subset-Acronis-Regular.eot');
+    src: url('../fonts/Acronis/subset-Acronis-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Acronis/subset-Acronis-Regular.woff2') format('woff2'),
+        url('../fonts/Acronis/subset-Acronis-Regular.woff') format('woff'),
+        url('../fonts/Acronis/subset-Acronis-Regular.ttf') format('truetype'),
+        url('../fonts/Acronis/subset-Acronis-Regular.svg#Acronis-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Acronis';
+    src: url('../fonts/Acronis/subset-Acronis-Light.eot');
+    src: url('../fonts/Acronis/subset-Acronis-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Acronis/subset-Acronis-Light.woff2') format('woff2'),
+        url('../fonts/Acronis/subset-Acronis-Light.woff') format('woff'),
+        url('../fonts/Acronis/subset-Acronis-Light.ttf') format('truetype'),
+        url('../fonts/Acronis/subset-Acronis-Light.svg#Acronis-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Acronis';
+    src: url('../fonts/Acronis/subset-Acronis-Bold.eot');
+    src: url('../fonts/Acronis/subset-Acronis-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Acronis/subset-Acronis-Bold.woff2') format('woff2'),
+        url('../fonts/Acronis/subset-Acronis-Bold.woff') format('woff'),
+        url('../fonts/Acronis/subset-Acronis-Bold.ttf') format('truetype'),
+        url('../fonts/Acronis/subset-Acronis-Bold.svg#Acronis-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
