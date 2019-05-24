@@ -520,6 +520,18 @@ img.svg{
 	background-color: #E3872D;
 	top: 2px;
 }
+.arlo_tm_title_holder.portfolio:before {
+	height: 72px;
+}
+.portfolio-github {
+	font-size: 16px;
+	font-family: "Montserrat", sans-serif;
+	padding-left: 25px;
+}
+
+.portfolio-github a {
+	color: #E3872D;
+}
 .portfolio-skills {
     list-style-position: inside;
 }
@@ -2669,7 +2681,11 @@ img.svg{
 	.arlo_tm_preloader{display: none;}
 	.arlo_tm_portfolio_single_wrap .title_holder h3{font-size: 45px;}
 }
+@media (max-width: 555px) {
+	.arlo_tm_title_holder.portfolio:before{height: 121px;}
+}
 @media (max-width: 480px) {
+	.portfolio-github{padding-left: 0;}
 	.arlo_tm_hero_header_wrap .name_holder h3{font-size: 30px;}
 	.arlo_tm_hero_header_wrap .text_typing p{font-size: 18px;}
 	.arlo_tm_title_holder:before{display: none;}
