@@ -62,27 +62,27 @@ export default class App extends Component {
 
                 <Switch>
                   <Route
-                    path="/"
+                    path="/works/star-db"
                     render={() => <h2>Welcome to Star DB</h2>}
                     exact />
-                  <Route path="/people/:id?" component={PeoplePage} />
-                  <Route path="/planets" component={PlanetsPage} />
-                  <Route path="/starships" component={StarshipsPage} exact />
-                  <Route path="/starships/:id"
+                  <Route path="/works/star-db/people/:id?" component={PeoplePage} />
+                  <Route path="/works/star-db/planets" component={PlanetsPage} />
+                  <Route path="/works/star-db/starships" component={StarshipsPage} exact />
+                  <Route path="/works/star-db/starships/:id"
                         render={({ match }) => {
                           const {id} = match.params;
 
                           return <StarshipDetails itemId={id} />
                         }} />
                   <Route
-                    path="/login"
+                    path="/works/star-db/login"
                     render={() => (
                       <LoginPage
                         isLoggedIn={isLoggedIn}
                         onLogin={this.onLogin} />
                     )}/>
                   <Route
-                    path="/secret"
+                    path="/works/star-db/secret"
                     render={() => (
                       <SecretPage isLoggedIn={isLoggedIn} />
                     )}/>
