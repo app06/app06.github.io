@@ -1,152 +1,98 @@
 import React, { Component } from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+} from 'react-router-dom';
 
-import AppHeader from '../app-header';
-import SearchPanel from '../search-panel';
-import TodoList from '../todo-list';
-import ItemStatusFilter from '../item-status-filter';
-import ItemAddForm from '../item-add-form';
+import Header from '../header';
+import RandomPlanet from '../random-planet';
+import SwapiService from '../../services/swapi-service';
+import DummySwapiService from '../../services/dummy-swapi-service';
+import ErrorBoundry from '../error-boundry';
+import { SwapiServiceProvider } from '../swapi-service-context';
+import {
+  PeoplePage,
+  PlanetsPage,
+  StarshipsPage,
+  LoginPage,
+  SecretPage
+ } from '../pages';
+
 import './app.css';
+import { StarshipDetails } from '../sw-components';
+
 
 export default class App extends Component {
-  maxId = 100;
+
 
   state = {
-    todoData: [
-      this.createTodoItem('Drink Coffee'),
-      this.createTodoItem('Make Awesome App'),
-      this.createTodoItem('Have a lunch')
-    ],
-    term: '',
-    filter: 'all' // all, active, done
+    swapiService: new SwapiService(),
+    isLoggedIn: false
   };
 
-  deleteItem = (id) => {
-    this.setState(({ todoData }) => {
-      const idx = todoData.findIndex((el) => el.id === id);
-
-      const newArray = [
-        ...todoData.slice(0, idx),
-        ...todoData.slice(idx + 1)
-      ];
-
-      return {
-        todoData: newArray
-      };
+  onLogin = () => {
+    this.setState({
+      isLoggedIn: true
     });
   };
 
-  createTodoItem(label) {
-    return {
-      label: label,
-      important: false,
-      done: false,
-      id: this.maxId++
-    };
-  }
-
-  toggleProperty(arr, id, property) {
-    const idx = arr.findIndex((el) => el.id === id);
-
-    const oldItem = arr[idx];
-    const newItem = {...oldItem, [property]: !oldItem[property]};
-
-    return [
-      ...arr.slice(0, idx),
-      newItem,
-      ...arr.slice(idx + 1)
-    ];
-  }
-
-  addItem = (text) => {
-    const newItem = this.createTodoItem(text);
-
-    this.setState(({ todoData }) => {
-      const newArray = [
-        ...todoData,
-        newItem
-      ];
-
+  onServiceChange = () => {
+    this.setState(({ swapiService }) => {
+      const Service  = swapiService instanceof SwapiService
+                              ? DummySwapiService
+                              : SwapiService;
       return {
-        todoData: newArray
+        swapiService: new Service()
       }
     });
   };
 
-  onToggleImportant = (id) => {
-    this.setState(({ todoData }) => {
-      return {
-        todoData: this.toggleProperty(todoData, id, 'important')
-      };
-    });
-  };
-
-  onToggleDone = (id) => {
-    this.setState(({ todoData }) => {
-      return {
-        todoData: this.toggleProperty(todoData, id, 'done')
-      };
-    });
-  };
-
-  onSearchChange = (term) => {
-    this.setState({ term });
-  };
-
-  onFilterChange = (filter) => {
-    this.setState({ filter });
-  };
-
-  search(items, term) {
-    if (term === '') {
-      return items;
-    }
-
-    return items.filter((item) => {
-      return item.label
-        .toLowerCase()
-        .indexOf(term.toLowerCase()) > -1;
-    });
-  }
-
-  filter(items, filter) {
-    switch(filter) {
-      case 'all':
-        return items;
-      case 'active':
-        return items.filter((item) => !item.done);
-      case 'done':
-        return items.filter((item) => item.done);
-      default:
-        return items;
-    }
-  }
-
   render() {
-    const { todoData, term, filter } = this.state;
 
-    const visibleItems = this.filter(this.search(todoData, term), filter);
-
-    const doneCount = todoData.filter((el) => el.done).length;
-    const todoCount = todoData.length - doneCount;
+    const { isLoggedIn } = this.state;
 
     return (
-      <div className="todo-app">
-        <AppHeader toDo={todoCount} done={doneCount} />
-        <div className="top-panel d-flex">
-          <SearchPanel onSearchChange={ this.onSearchChange } />
-          <ItemStatusFilter
-            filter={ filter }
-            onFilterChange={ this.onFilterChange } />
-        </div>
-        <TodoList
-          todos={ visibleItems }
-          onDeleted={ this.deleteItem }
-          onToggleImportant={ this.onToggleImportant }
-          onToggleDone={ this.onToggleDone }/>
+      <ErrorBoundry>
+        <SwapiServiceProvider value={this.state.swapiService}>
+          <Router>
+            <div className="start-db-app">
+                <Header onServiceChange={this.onServiceChange} />
+                <RandomPlanet />
 
-        <ItemAddForm onItemAdded={ this.addItem } />
-      </div>
+                <Switch>
+                  <Route
+                    path="/"
+                    render={() => <h2>Welcome to Star DB</h2>}
+                    exact />
+                  <Route path="/people/:id?" component={PeoplePage} />
+                  <Route path="/planets" component={PlanetsPage} />
+                  <Route path="/starships" component={StarshipsPage} exact />
+                  <Route path="/starships/:id"
+                        render={({ match }) => {
+                          const {id} = match.params;
+
+                          return <StarshipDetails itemId={id} />
+                        }} />
+                  <Route
+                    path="/login"
+                    render={() => (
+                      <LoginPage
+                        isLoggedIn={isLoggedIn}
+                        onLogin={this.onLogin} />
+                    )}/>
+                  <Route
+                    path="/secret"
+                    render={() => (
+                      <SecretPage isLoggedIn={isLoggedIn} />
+                    )}/>
+
+                  <Route render={() => <h2>Page not found!</h2>} />
+                </Switch>
+            </div>
+          </Router>
+        </SwapiServiceProvider>
+      </ErrorBoundry>
     );
   }
 };
-
